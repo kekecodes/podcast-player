@@ -1,0 +1,267 @@
+                                                * {
+                                                  margin: 0;
+                                                  padding: 0;
+                                                  font-family: "poppins", Sans-Serif;
+                                                  box-sizing: border-box;
+                                                }
+                                                body {
+                                                  background: #fcfcfd;
+                                                }
+                                                .container {
+                                                  display: flex;
+                                                  justify-content: center;
+                                                  width: 290px;
+                                                  height: 100vh;
+                                                  background-color: #272f31;
+                                                  color: white;
+                                                  overflow: hidden;
+                                                  border: 6px solid #ff3131;
+                                                  border-radius: 36px;
+                                                }
+
+                                                header {
+                                                  display: block;
+                                                  border-bottom: 2px solid grey;
+                                                  height: 20vh;
+                                                  padding-bottom: 5%;
+                                                  width: 100%;
+                                                  height: 10%;
+                                                }
+
+                                                h1 {
+                                                  position: absolute;
+                                                  top: 5%;
+                                                  left: 41%;
+                                                  transform: translateY(-50%);
+                                                  width: 20%;
+                                                  text-align: center;
+                                                  letter-spacing: 0.5rem;
+                                                  text-transform: uppercase;
+
+                                                  font-size: 15px;
+                                                  font-family: sans-serif;
+                                                }
+                                                h1 span {
+                                                  display: inline-block;
+                                                  animation: animate 1s ease-in-out;
+                                                }
+
+                                                @keyframes animate {
+                                                  0% {
+                                                    opacity: 0%;
+                                                    transform: rotateY(90deg);
+                                                    filter: blur(10px);
+                                                  }
+                                                  100% {
+                                                    opacity: 1;
+                                                    transform: rotateY(0deg);
+                                                    filter: blur(0px);
+                                                  }
+                                                }
+                                                h1 span:nth-child(1) {
+                                                  animation-delay: 0.6s;
+                                                }
+                                                h1 span:nth-child(2) {
+                                                  animation-delay: 1s;
+                                                }
+                                                h1 span:nth-child(3) {
+                                                  animation-delay: 1.7s;
+                                                }
+                                                h1 span:nth-child(4) {
+                                                  animation-delay: 2.3s;
+                                                }
+                                                h1 span:nth-child(5) {
+                                                  animation-delay: 2.7s;
+                                                }
+                                                h1 span:nth-child(6) {
+                                                  animation-delay: 3.2s;
+                                                }
+                                                h1 span:nth-child(7) {
+                                                  animation-delay: 3.7s;
+                                                }
+                                                h1 span:nth-child(8) {
+                                                  animation-delay: 4s;
+                                                }
+                                                .headerinfo {
+                                                  display: flex;
+                                                  margin-top: 15%;
+                                                  justify-content: space-between;
+                                                  width: 100%;
+                                                  height: 60%;
+
+                                                }
+                                                .back-button,
+                                                .menu-button {
+                                                  background-color: transparent;
+                                                  border: none;
+                                                  padding: 0;
+                                                  cursor: pointer;
+                                                }
+
+                                                .back-button i,
+                                                .menu-button i {
+                                                  font-size: 15px;
+                                                  color: #d9b38c;
+                                                }
+                                                .music-player {
+                                                  position: absolute;
+                                                  justify-content: center;
+                                                  align-items: center;
+                                                  text-align: center;
+                                                  width: 20%;
+                                                  height: 60vh;
+                                                  top: 13%;
+
+                                                }
+                                                h2 {
+                                                  font-size: 20px;
+                                                }
+                                              img {
+                                                  width: 250px;
+                                                   height: 250px;
+                                                  border: 1px solid black;
+                                                   margin-bottom: -110px;
+                        }
+                                                .music-player-info {
+
+                                                  height: 200px;
+
+                                                  border: 1px solid #272f31;
+                                                  /*padding: 5px;*/
+                                                }
+                                                h3 {
+                                                  font-size: 16px;
+                                                }
+                                                #music-player-info {
+                                                  width: 103%;
+
+                                                  height: 25%
+
+
+                                                }
+                                                 span {
+                                                @extend .visually-hidden;
+                                              }
+                                            }
+
+                                            progress {
+                                              height: 10px;      
+                                              background-color: #ff3131;
+                                              width: calc(100% - 281px);
+                                            -webkit-appearance: none;
+                                               -moz-appearance: none;
+                                                    appearance: none;
+                                            }
+
+                                            progress[value]::-webkit-progress-bar {
+                                              background-color: #ff3131;
+                                              border-radius: 0;
+                                              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+                                            }
+
+                                            progress[value]::-webkit-progress-value  {
+                                              background: #ff3131;
+                                            }
+
+                                            .pcast-time {
+                                              display: inline-block;
+                                              font-size: 13px;
+                                              text-align: center;
+                                              width: 4em;
+                                            }
+
+                                            .pcast-speed {
+                                              width: 2.5em;
+                                            }
+
+                                                .info {
+                                                  width: 100%;
+                                                  height: 50vh;
+                                                }
+                                                .episode-info {
+                                                  width: 100%;
+                                                }
+
+                                                .btn1 {
+                                                   margin-top: 50%;
+                                                }
+                                                  .btn {
+                                              border: none;
+                                              background: transparent;
+                                              color: #ff3131;
+
+
+                                            }
+
+                                            .progress {
+                                              position: absolute;
+                                              top: 76%;
+                                              left: 48%;
+                                              width: 50%;
+                                              background-color: #ff3131;
+
+                                            }
+
+                                            .progress-bar {
+                                              cursor: pointer;
+
+                                            }
+                                                .music-player-controls {
+                                                  display: flex;
+                                                  justify-content: space-evenly;
+                                                  margin-top: 10px;
+
+                                                }
+                                                  .btn-outline-secondary {
+                                              border: none;
+                                              background: transparent;
+                                              margin: 0 5px;
+                                            }
+
+                                            .btn-outline-secondary:hover {
+                                              background: rgba(255, 255, 255, 0.1);
+                                            }
+
+                                                .music-player-controls button {
+                                                  border: none;
+                                                  padding: 5px 10px;
+                                                  cursor: pointer;
+                                                }
+
+                                                .music-player-controls button:hover {
+                                                  background-color: #eee;
+                                                }
+                                                   .control {
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: space-around;
+                                            padding: 18px 0 8px 0;
+                                          }
+
+                                          .control .btn {
+                                            color: #ff3131;
+                                            padding: 18px;
+                                            font-size: 18px;
+                                          }
+                                          .control .btn-toggle-play {
+                                            width: 56px;
+                                            height: 56px;
+                                            border-radius: 50%;
+                                            font-size: 24px;
+                                            color: #fff;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            background-color: #ff3131;
+                                            border: 2px solid #ff3131;
+                                          }
+                                          .icon-pause {
+                                     display: none;
+                                    }
+                              .icon-play {
+                                color:  white;
+                              }
+                                    .icon-play:first-child {
+                                     display: inline;
+                                    }
+   

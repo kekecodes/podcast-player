@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Track List</title>
+    <script
+      src="https://kit.fontawesome.com/66bac51810.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://icono-49d6.kxcdn.com/icono.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="Podcast.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>
+          <span>P</span>
+          <span>O</span>
+          <span>D</span>
+          <span>C</span>
+          <span>A</span>
+          <span>S</span>
+          <span>T</span>
+          <span>.</span>
+        </h1>
+        <div class="headerinfo">
+          <button class="back-button">
+            <i class="fa-solid fa-arrow-left" style="color: #ff3131"></i>
+          </button>
+          <button class="menu-button">
+            <i class="fa-solid fa-ellipsis-vertical" style="color: #ff3131"></i>
+          </button>
+        </div>
+      </header>
+      <main class="music-player">
+        <h2>Now Playing...</h2>
+        <ul id="playlist"></ul>
+        <div class="podcast">
+          <img
+            src="https://i0.wp.com/www.thisismacg.com/wp-content/uploads/2016/09/MAINLogo-1-e1642318143330.png?w=1080&ssl=1"
+            alt="Podcast 1"
+          />
+        </div>
+        <div class="music-player-info">
+          <div class="btn1">
+            <button class="btn btn-outline-secondary">
+              <i class="fa fa-share-alt"></i>
+            </button>
+            <button class="btn btn-outline-secondary">
+              <i class="fa fa-play-circle"></i>
+            </button>
+            <button class="btn btn-outline-secondary">
+              <i class="fa fa-heart"></i>
+            </button>
+            <button class="btn btn-outline-secondary">
+              <i class="fa fa-plus"></i>
+            </button>
+            <button class="btn" id="volumeIcon">
+              <i class="fas fa-volume-up"></i>
+            </button>
+            <div class="progress" id="volumeProgress" style="display: none">
+              <div
+                class="progress-bar bg-success"
+                role="progressbar"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 0%"
+              >
+                <span id="volumeLabel">0%</span>
+              </div>
+            </div>
+
+            <div id="music-player-info">
+              <span class="pcast-currenttime pcast-time">00:00</span>
+              <progress class="pcast-progress" value="0"></progress>
+              <span class="pcast-duration pcast-time">00:00</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="episode-info">
+          <h3 class="episode-title">EPISODE 512 | Chillers</h3>
+          <p class="episode-description">Mac G: Podcast and chill</p>
+        </div>
+
+        <div class="control">
+          <div class="btn btn-random">
+            <i id="randomIcon" class="fas fa-random"></i>
+          </div>
+          <div class="btn btn-prev">
+            <i class="fas fa-step-backward"></i>
+          </div>
+          <div class="btn btn-toggle-play">
+            <i class="fas fa-pause icon-pause"></i>
+            <i class="fas fa-play icon-play"></i>
+          </div>
+          <div class="btn btn-next">
+            <i class="fas fa-step-forward"></i>
+          </div>
+          <div class="btn btn-repeat">
+            <i class="fas fa-redo"></i>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="Podcast.js"></script>
+  </body>
+</html>
